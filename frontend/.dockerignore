@@ -1,0 +1,40 @@
+# ======================================
+# 📦 DEPENDÊNCIAS E BUILD
+# ======================================
+node_modules/       # Ignora dependências (serão reinstaladas no container)
+dist/               # Ignora pasta de build gerada localmente
+.cache/             # Cache de ferramentas como Vite/Babel
+.vite/              # Cache específico do Vite
+
+# ======================================
+# 🔒 ARQUIVOS SENSÍVEIS
+# ======================================
+.env                # Variáveis de ambiente
+.env.local          
+.env.*              # Todas variações de ambiente
+*.env               
+
+# ======================================
+# 🗄️ SISTEMA E IDE
+# ======================================
+.DS_Store           # Arquivos do macOS
+Thumbs.db           # Arquivos do Windows
+.idea/              # Configurações do JetBrains IDE
+.vscode/            # Configurações do VS Code
+
+# ======================================
+# 📝 LOGS E TEMPORÁRIOS
+# ======================================
+*.log               # Logs do npm/yarn/pnpm
+npm-debug.log*
+yarn-error.log*
+*.tmp               # Arquivos temporários
+*.swp               # Arquivos de swap
+
+# ======================================
+# 🖼️ ARQUIVOS DESNECESSÁRIOS
+# ======================================
+*.md                # Markdown files
+*.pdf               
+*.zip               
+*.txt
